@@ -3,6 +3,7 @@ package com.aograph;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.aograph.entity.Story;
@@ -11,6 +12,7 @@ import com.aograph.service.IStoryService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Test.class)
+@ComponentScan(basePackages={"com.aograph"})
 public class Test {
 
 	@Autowired
